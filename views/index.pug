@@ -1,0 +1,10 @@
+html
+    head
+        title= title
+    body
+        p Your score is #{score}
+        p Next sequence is #{question}
+        p Enter answer 
+        form(method='POST' action='/answer')
+            input(type="text" name="answer")
+            input(type="submit" value="Submit")
